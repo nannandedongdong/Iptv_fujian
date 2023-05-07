@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.ccdt.ottclient"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <!-- 权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+
+    <!--<uses-sdk-->
+    <!--tools:overrideLibrary="android.support.v17.leanback"-->
+    <!--/>-->
+    <!--<uses-feature-->
+    <!--android:name="android.software.leanback"-->
+    <!--android:required="false"-->
+    <!--/>-->
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="landscape"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.InterfaceTestActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            >
+        </activity>
+
+        <activity android:name=".ui.activity.PurchaseHistoryActivity"/>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:theme="@style/Theme.PageIndicatorDefaultsNoTitleBarFullscreen"
+            />
+        <activity android:name=".ui.activity.MovieListActivity"/>
+        <activity android:name=".ui.activity.TvBackActivity"/>
+
+        <activity android:name=".ui.activity.NewsDetailActivity"/>
+        <activity android:name=".ui.activity.PaikeListActivity"/>
+        <activity android:name=".ui.activity.SearchActivity"/>
+        <activity
+            android:name=".ui.activity.VodDetailActivity"
+            android:theme="@style/AppTheme"
+            />
+
+        <activity android:name=".ui.activity.AllAppActivity"/>
+        <activity android:name=".ui.activity.SystemHiddenActivity"/>
+        <activity android:name=".ui.activity.VODPlayerActivity"/>
+        <activity android:name=".ui.activity.PlayHistoryActivity"/>
+        <activity android:name=".ui.activity.LivePlayerActivity"/>
+        <activity android:name=".ui.activity.PaikeTaskActivity"/>
+        <activity android:name=".ui.activity.CollectedActivity"/>
+        <activity android:name=".ui.activity.AccountInfoActivity"/>
+        <activity android:name=".ui.activity.PaikeTaskDetailActivity"/>
+        <activity android:name=".ui.activity.OtherListActivity"/>
+        <activity
+            android:name=".ui.dialog.VODBuyDialogActivity"
+            android:theme="@style/Theme.DialogStyle"
+            />
+        <activity
+            android:name=".ui.dialog.PayDialogActivity"
+            android:theme="@style/Theme.DialogStyle"
+            />
+        <activity
+            android:name=".ui.dialog.SeriesDialogActivity"
+            android:theme="@style/Theme.DialogStyle"
+            />
+        <activity
+            android:name="upgrade.UpgradeDialogActivity"
+            android:theme="@style/Theme.DialogStyle"
+            />
+        <activity
+            android:name=".ui.activity.NewsListActivity"
+            android:theme="@style/AppTheme"
+            />
+        <activity
+            android:name=".ui.dialog.ImageDialogActivity"
+            android:theme="@style/popupDialog"
+            />
+
+        <provider
+            android:name="com.ccdt.ottclient.provider.SQLContentProvider"
+            android:authorities="com.ccdt.ottclient.provider.public"
+            android:exported="true"
+            />
+    </application>
+
+</manifest>

@@ -1,0 +1,133 @@
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.activity.PurchaseHistoryActivity"
+    >
+
+
+    <TextView
+        android:id="@+id/txtGouMaiJiLu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:text="购买记录"
+        android:textColor="#6e81c9"
+        android:textSize="28sp"
+        />
+
+    <TextView
+        android:id="@+id/txtZhangHuYuE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtGouMaiJiLu"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txtGouMaiJiLu"
+        android:text="账户余额："
+        android:textColor="#6e81c9"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/txtBalance"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtGouMaiJiLu"
+        android:layout_toRightOf="@id/txtZhangHuYuE"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#6e81c9"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="110dp"
+        android:orientation="horizontal"
+        app:layout_marginLeftPercent="5%"
+        app:layout_widthPercent="90%"
+        >
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:background="@color/PurchaseHistory_1_1"
+            android:gravity="center"
+            android:text="产品名称"
+            android:textColor="#6e81c9"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/PurchaseHistory_1_2"
+            android:gravity="center"
+            android:text="价格"
+            android:textColor="#6e81c9"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/txtOrderTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:background="@color/PurchaseHistory_1_1"
+            android:gravity="center"
+            android:text="订购时间"
+            android:textColor="#6e81c9"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@color/PurchaseHistory_1_2"
+            android:gravity="center"
+            android:text="状态"
+            android:textColor="#6e81c9"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/txtOperation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:background="@color/PurchaseHistory_1_1"
+            android:gravity="center"
+            android:text="操作"
+            android:textColor="#6e81c9"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="0dp"
+        android:id="@+id/purchase_history_lv"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:listSelector="@android:color/transparent"
+        app:layout_marginLeftPercent="5%"
+        app:layout_widthPercent="90%"
+        >
+
+    </ListView>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- 购买记录 -->
+    <color name="PurchaseHistory_1_1">#101b31</color>
+    <color name="PurchaseHistory_1_2">#19243a</color>
+    <color name="PurchaseHistory_2_1">#283751</color>
+    <color name="PurchaseHistory_2_2">#1d2a45</color>
+    <color name="PurchaseHistory_selector_left">#990085b0</color>
+    <color name="PurchaseHistory_selector_right">#9913a267</color>
+
+
+
+    <!-- 白色 -->
+    <color name="white" >#ffffff</color>
+    <color name="white_parent" >#90ffffff</color>
+
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+
+    <color name="gray">#8b8b8b</color>
+    <color name="yellow">#ffff00</color>
+    <color name="ad_bg">#040b18</color>
+    <color name="black">#000000</color>
+    <color name="Cyan">#c000BCD4</color>
+
+    <color name="text_color_blue">#465281</color>
+    <color name="titlestrip_background_color">#DEDEDE</color>
+    <color name="titlestrip_text_color">#999999</color>
+
+    <color name="item_border_color">#666666</color>
+    <color name="item_default_color">#EEEEEE</color>
+    <color name="item_pressed_color">#CCCCCC</color>
+    <color name="item_activated_color">#77CEEE</color>
+
+    <color name="color_0090ff">#0090ff</color>
+    <color name="color_474554">#474554</color>
+    <color name="color_95232b">#95232b</color>
+    <color name="color_0d1932">#0d1932</color>
+    <color name="color_942529">#942529</color>
+    <color name="color_fc9600">#fc9600</color>
+    <color name="color_bg_tran">#60000000</color>
+
+    <color name="base_title_unselected">#56659C</color>
+    <color name="text_unselected_vod">#A0FFFFFF</color>
+
+    <color name="color_00cccc">#00cccc</color>
+    <color name="color_cccccc">#cccccc</color>
+
+</resources>

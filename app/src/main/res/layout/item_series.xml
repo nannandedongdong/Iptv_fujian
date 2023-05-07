@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.ccdt.ottclient.ui.view.StrokeTextView
+        android:id="@+id/vod_video_detail_series_item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selector_series"
+        android:gravity="center"
+        app:innnerColor="@color/white"
+        app:outerColor="@color/color_0d1932"
+        android:singleLine="true"
+        android:textSize="26sp" />
+
+</RelativeLayout>

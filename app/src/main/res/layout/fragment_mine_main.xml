@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.slf.frame.tv.widget.TvRelativeLayoutAsGroup
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center"
+    app:animationType="DEFAULT"
+    app:boarder="@dimen/px27"
+    app:cursorRes="@drawable/shadow"
+    app:delay="0"
+    app:durationLarge="50"
+    app:durationSmall="50"
+    app:scale="1.03"
+    >
+
+    <!--
+         boarder-:光标偏移参数组
+         paddingLeft:左内边距  * 右外边距据此自动计算
+         paddingTop:左上边距
+         initFocus:初始获得焦点
+         scalable:子项是否放大
+         scale:放大比率
+         animationType:选中框位移动画
+         durationLarge:放大用时
+         durationSmall:缩小用时
+         delay:放大动画启动延时
+    -->
+    <RelativeLayout
+        android:id="@+id/btn_mine_account"
+        android:layout_width="@dimen/px435"
+        android:layout_height="@dimen/px726"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scaleType="fitXY"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_my_head"
+            android:tag="tag_bg"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/px38"
+            android:src="@drawable/ic_my_acc_txt"
+            android:tag="tag_title"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_mine_collected"
+        android:layout_width="@dimen/px435"
+        android:layout_height="@dimen/px726"
+        android:layout_marginLeft="@dimen/px6"
+        android:layout_toRightOf="@id/btn_mine_account"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_my_shoucang"
+            android:tag="tag_bg"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:tag="img_haibao"
+            />
+
+        <View
+            android:id="@+id/shadow_shoucang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_vod_page_blue"
+            android:visibility="invisible"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px90"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/px23"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px60"
+                android:src="@drawable/ic_my_shoucang_title"
+                android:tag="tag_title"
+                />
+
+            <View
+                android:layout_width="@dimen/px2"
+                android:layout_height="@dimen/px45"
+                android:layout_marginBottom="@dimen/px10"
+                android:layout_marginLeft="@dimen/px60"
+                android:background="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txt_num_shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px10"
+                android:layout_marginLeft="@dimen/px30"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_mine_recorded"
+        android:layout_width="@dimen/px435"
+        android:layout_height="@dimen/px726"
+        android:layout_marginLeft="@dimen/px6"
+        android:layout_toRightOf="@id/btn_mine_collected"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_my_playrecoder"
+            android:tag="tag_bg"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:tag="img_haibao"
+            />
+
+        <View
+            android:id="@+id/shadow_play_recorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_vod_page_yellow"
+            android:visibility="invisible"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px90"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/px23"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px60"
+                android:src="@drawable/ic_my_play_recorder_title"
+                android:tag="tag_title"
+                />
+
+            <View
+                android:layout_width="@dimen/px2"
+                android:layout_height="@dimen/px45"
+                android:layout_marginBottom="@dimen/px10"
+                android:layout_marginLeft="@dimen/px60"
+                android:background="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txt_num_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px10"
+                android:layout_marginLeft="@dimen/px30"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/btn_mine_paike"
+        android:layout_width="@dimen/px528"
+        android:layout_height="@dimen/px360"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/px6"
+        android:layout_toRightOf="@id/btn_mine_recorded"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_my_paike_selector"
+        />
+
+    <ImageView
+        android:id="@+id/btn_mine_purchase"
+        android:layout_width="@dimen/px261"
+        android:layout_height="@dimen/px360"
+        android:layout_alignLeft="@id/btn_mine_paike"
+        android:layout_below="@id/btn_mine_paike"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/btn_mine_recorded"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_my_buyrecorder_selector"
+        />
+
+    <ImageView
+        android:id="@+id/btn_mine_settings"
+        android:layout_width="@dimen/px261"
+        android:layout_height="@dimen/px360"
+        android:layout_alignTop="@id/btn_mine_purchase"
+        android:layout_below="@id/btn_mine_paike"
+        android:layout_marginLeft="@dimen/px6"
+        android:layout_toRightOf="@id/btn_mine_purchase"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_my_settings_selector"
+        />
+</com.slf.frame.tv.widget.TvRelativeLayoutAsGroup>

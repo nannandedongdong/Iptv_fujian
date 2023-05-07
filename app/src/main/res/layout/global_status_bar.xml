@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/home_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/week_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingTop="8dp"
+            android:textColor="#FFFEFF"
+            android:textSize="10sp"
+            />
+
+        <TextView
+            android:id="@+id/date_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:textColor="#FFFEFF"
+            android:textSize="10sp"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_toLeftOf="@id/layout_time"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:textColor="#FFFEFF"
+        android:textSize="30sp"
+        />
+
+    <com.ccdt.ottclient.ui.widget.NetworkStatusView
+        android:id="@+id/netInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtTime"
+        android:layout_alignTop="@id/txtTime"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@id/txtTime"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txtTime"
+        android:layout_alignTop="@id/txtTime"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/weather_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weather_icon"
+            />
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/txtCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="24sp"
+            android:text="@string/location"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

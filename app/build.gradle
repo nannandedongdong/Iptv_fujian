@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.ccdt.stb.vision.hebei"
+        minSdkVersion 14
+        targetSdkVersion 14
+        versionCode 1
+        versionName "1.0.0_0422"
+    }
+    signingConfigs {
+        release {
+            storeFile file("itvision.keystore")
+            storePassword "itvision"
+            keyAlias "itvision"
+            keyPassword "itvision"
+        }
+    }
+
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+}
+
+
+repositories {
+    maven {
+        url 'https://oss.sonatype.org/content/repositories/snapshots/'
+
+    }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:palette-v7:23.0.1'
+    compile 'com.android.support:percent:23.0.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    //    compile 'com.android.support:leanback-v17:23.1.1'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.yqritc:recyclerview-flexibledivider:1.2.6'
+    compile files('libs/libthrift-0.9.2.jar')
+    compile files('libs/PortalClient.jar')
+    compile files('libs/slf4j-api-1.6.6.jar')
+    compile files('libs/slf4j-log4j12-1.6.6.jar')
+    compile files('libs/log4j-1.2.17.jar')
+    compile project(':SlidingMenu')
+    compile project(':iovivatv')
+    compile project(':frametv')
+//    compile files('libs/renderscript-v8.jar')
+}

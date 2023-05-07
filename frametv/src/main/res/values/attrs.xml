@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="cursorRes" format="reference"/>
+    <attr name="cursorRes_1280" format="reference"/>
+    <attr name="cursorRes_1920" format="reference"/>
+    <attr name="cursorRes_2560" format="reference"/>
+    <attr name="cursorRes_3840" format="reference"/>
+    <attr name="cursorRes_4096" format="reference"/>
+    
+    <attr name="cursorOffset" format="dimension"/>
+    <attr name="cursorOffsetTop" format="dimension"/>
+    <attr name="cursorOffsetLeft" format="dimension"/>
+    <attr name="cursorOffsetBottom" format="dimension"/>
+    <attr name="cursorOffsetRight" format="dimension"/>
+    <attr name="cursorOffsetInt" format="integer"/>
+    <attr name="cursorOffsetTopInt" format="integer"/>
+    <attr name="cursorOffsetLeftInt" format="integer"/>
+    <attr name="cursorOffsetBottomInt" format="integer"/>
+    <attr name="cursorOffsetRightInt" format="integer"/>
+    
+    <attr name="imageRes" format="reference"/>
+    <attr name="scalable" format="boolean"/>
+    <attr name="scale" format="float"/>
+    <attr name="animationType">
+        <enum name="DEFAULT" value="0"/>
+        <enum name="TRANSLATE" value="1"/>
+    </attr>
+    <attr name="focusOption">
+        <enum name="PARENT_ONLY" value="0"/>
+        <enum name="CHILD_ONLY" value="1"/>
+    </attr>
+    <attr name="durationLarge" format="integer"/>
+    <attr name="durationSmall" format="integer"/>
+    <attr name="durationScroll" format="integer"/>
+    <attr name="durationTranslate" format="integer"/>
+    <attr name="delay" format="integer" />
+    <attr name="scrollDelay" format="integer" />
+    <attr name="scrollDuration" format="integer" />
+    <attr name="paddingLeft" format="dimension"/>
+    <attr name="paddingTop" format="dimension"/>
+    <attr name="boarder" format="dimension"/>
+    <attr name="boarderTop" format="dimension"/>
+    <attr name="boarderLeft" format="dimension"/>
+    <attr name="boarderBottom" format="dimension"/>
+    <attr name="boarderRight" format="dimension"/>
+    <attr name="boarderInt" format="integer"/>
+    <attr name="boarderTopInt" format="integer"/>
+    <attr name="boarderLeftInt" format="integer"/>
+    <attr name="boarderBottomInt" format="integer"/>
+    <attr name="boarderRightInt" format="integer"/>
+    <attr name="backgroundColor" format="color" />
+    <attr name="progressStartColor" format="color" />
+    <attr name="progressEndColor" format="color" />
+    <attr name="roundWidth" format="dimension"/>
+    <attr name="rectRadius" format="dimension"/>
+    <attr name="text" format="string|reference" />
+    <attr name="textColor" format="color" />
+    <attr name="textColorDefault" format="color" />
+    <attr name="textColorSelected" format="color" />
+    <attr name="textSize" format="dimension" />
+    <attr name="max" format="integer"/>
+    <attr name="textDisplayable" format="boolean"/>
+    <attr name="textStyle">
+        <enum name="DEFAULT" value="0"/>
+        <enum name="LTH" value="1"/>
+    </attr>
+    <attr name="style">
+        <enum name="RING" value="0"/>
+        <enum name="FAN" value="1"/>
+        <enum name="RECT" value="2"/>
+    </attr>
+    <attr name="focusable" format="boolean"/>
+    <attr name="period" format="integer"/>
+    <attr name="clockwise" format="boolean"/>
+    <!-- 边缘模糊 -->
+    <attr name="vague" format="boolean"/>
+    <attr name="columns" format="integer"/>
+    <attr name="rows" format="integer"/>
+    <attr name="spaceHori" format="dimension"/>
+    <attr name="spaceVert" format="dimension"/>
+    <attr name="itemWidth" format="dimension"/>
+    <attr name="itemHeight" format="dimension"/>
+    <attr name="titleWidth" format="dimension"/>
+    <attr name="titleHeight" format="dimension"/>
+    <attr name="titleSpace" format="dimension"/>
+    <attr name="titleMarginLeft" format="dimension"/>
+    <attr name="pageWidth" format="dimension"/>
+    <attr name="dividerHeight" format="dimension"/>
+    <attr name="cursorWidth" format="dimension"/>
+    <attr name="cursorHeight" format="dimension"/>
+    <attr name="cursorMarginLeft" format="dimension"/>
+    <attr name="cursorMarginTop" format="dimension"/>
+    <attr name="cursorMarginRight" format="dimension"/>
+    <attr name="cursorMarginBottom" format="dimension"/>
+    
+    <attr name="initFocus" format="boolean"/>
+    
+    <attr name="scrollMode">
+        <enum name="FILL" value="0"/>
+        <enum name="GALLERY" value="1"/>
+        <enum name="EDGE" value="2"/>
+    </attr>
+
+    <declare-styleable name="TvTabHost">
+        <attr name="cursorRes"/>
+        <attr name="textColorDefault" />
+        <attr name="textColorSelected" />
+        <attr name="titleWidth"/>
+        <attr name="titleHeight"/>
+        <attr name="titleSpace"/>
+        <attr name="titleMarginLeft"/>
+        <attr name="textSize" />
+        <attr name="dividerHeight"/>
+        <attr name="durationScroll"/>
+        <attr name="scalable"/>
+        <attr name="scale"/>
+        <attr name="animationType"/>
+        <attr name="durationLarge"/>
+        <attr name="durationSmall"/>
+        <attr name="delay" />
+        <attr name="cursorWidth"/>
+        <attr name="cursorHeight"/>
+        <attr name="cursorMarginLeft"/>
+        <attr name="cursorMarginTop"/>
+        <attr name="cursorMarginRight"/>
+        <attr name="cursorMarginBottom"/>
+    	<attr name="cursorOffsetTop" />
+   	 	<attr name="cursorOffsetLeft" />
+    	<attr name="cursorOffsetBottom" />
+    	<attr name="cursorOffsetRight" />
+    	<attr name="paddingLeft"/>
+        <attr name="paddingTop"/>
+    </declare-styleable>
+    
+    <declare-styleable name="TvRelativeLayoutAsGroup">
+        <attr name="cursorRes"/>
+        <attr name="cursorRes_1280"/>
+    	<attr name="cursorRes_1920"/>
+    	<attr name="cursorRes_2560"/>
+   	    <attr name="cursorRes_3840"/>
+   	    <attr name="cursorRes_4096"/>
+        <attr name="scalable"/>
+        <attr name="scale"/>
+        <attr name="animationType"/>
+        <attr name="durationLarge"/>
+        <attr name="durationSmall"/>
+        <attr name="durationTranslate"/>
+        <attr name="delay" />
+        <attr name="boarder"/>
+        <attr name="boarderTop"/>
+        <attr name="boarderLeft"/>
+        <attr name="boarderBottom"/>
+        <attr name="boarderRight"/>
+        <attr name="boarderInt"/>
+        <attr name="boarderTopInt"/>
+        <attr name="boarderLeftInt"/>
+        <attr name="boarderBottomInt"/>
+        <attr name="boarderRightInt"/>
+        <attr name="itemWidth"/>
+        <attr name="itemHeight"/>
+        <attr name="paddingLeft"/>
+        <attr name="paddingTop"/>
+        <attr name="initFocus"/>
+    </declare-styleable>
+    
+    <declare-styleable name="TvRelativeLayoutAsScroll">
+        <attr name="cursorRes"/>
+        <attr name="cursorRes_1280"/>
+    	<attr name="cursorRes_1920"/>
+    	<attr name="cursorRes_2560"/>
+   	    <attr name="cursorRes_3840"/>
+   	    <attr name="cursorRes_4096"/>
+        <attr name="scalable"/>
+        <attr name="scale"/>
+        <attr name="animationType"/>
+        <attr name="durationLarge"/>
+        <attr name="durationSmall"/>
+        <attr name="durationTranslate"/>
+        <attr name="delay" />
+        <attr name="scrollDelay"/>
+    	<attr name="scrollDuration"/>
+        <attr name="boarder"/>
+        <attr name="boarderTop"/>
+        <attr name="boarderLeft"/>
+        <attr name="boarderBottom"/>
+        <attr name="boarderRight"/>
+        <attr name="boarderInt"/>
+        <attr name="boarderTopInt"/>
+        <attr name="boarderLeftInt"/>
+        <attr name="boarderBottomInt"/>
+        <attr name="boarderRightInt"/>
+        <attr name="itemWidth"/>
+        <attr name="itemHeight"/>
+        <attr name="paddingLeft"/>
+        <attr name="paddingTop"/>
+        <attr name="initFocus"/>
+    </declare-styleable>
+    
+    <declare-styleable name="TvListView">
+        <attr name="cursorRes"/>
+        <attr name="cursorRes_1280"/>
+    	<attr name="cursorRes_1920"/>
+    	<attr name="cursorRes_2560"/>
+   	    <attr name="cursorRes_3840"/>
+   	    <attr name="cursorRes_4096"/>
+        <attr name="scalable"/>
+        <attr name="focusOption"/>
+        <attr name="scale"/>
+        <attr name="animationType"/>
+        <attr name="durationLarge"/>
+        <attr name="durationSmall"/>
+        <attr name="delay" />
+        <attr name="scrollDelay"/>
+    	<attr name="scrollDuration"/>
+        <attr name="boarder"/>
+        <attr name="boarderTop"/>
+        <attr name="boarderLeft"/>
+        <attr name="boarderBottom"/>
+        <attr name="boarderRight"/>
+        <attr name="boarderInt"/>
+        <attr name="boarderTopInt"/>
+        <attr name="boarderLeftInt"/>
+        <attr name="boarderBottomInt"/>
+        <attr name="boarderRightInt"/>
+        <attr name="spaceVert"/>
+        <attr name="itemWidth"/>
+        <attr name="itemHeight"/>
+        <attr name="paddingLeft"/>
+        <attr name="paddingTop"/>
+        <attr name="initFocus"/>
+        <attr name="scrollMode"/>
+    </declare-styleable>
+    <declare-styleable name="TvGridView">
+        <attr name="cursorRes"/>
+        <attr name="cursorRes_1280"/>
+    	<attr name="cursorRes_1920"/>
+    	<attr name="cursorRes_2560"/>
+   	    <attr name="cursorRes_3840"/>
+   	    <attr name="cursorRes_4096"/>
+        <attr name="scalable"/>
+        <attr name="scale"/>
+        <attr name="animationType"/>
+        <attr name="durationLarge"/>
+        <attr name="durationSmall"/>
+        <attr name="durationTranslate"/>
+        <attr name="delay" />
+        <attr name="scrollDelay"/>
+    	<attr name="scrollDuration"/>
+        <attr name="boarder"/>
+        <attr name="boarderTop"/>
+        <attr name="boarderLeft"/>
+        <attr name="boarderBottom"/>
+        <attr name="boarderRight"/>
+        <attr name="boarderInt"/>
+        <attr name="boarderTopInt"/>
+        <attr name="boarderLeftInt"/>
+        <attr name="boarderBottomInt"/>
+        <attr name="boarderRightInt"/>
+        <attr name="columns"/>
+        <attr name="spaceHori"/>
+        <attr name="spaceVert"/>
+        <attr name="itemWidth"/>
+        <attr name="itemHeight"/>
+        <attr name="paddingLeft"/>
+        <attr name="paddingTop"/>
+        <attr name="initFocus"/>
+        <attr name="scrollMode"/>
+    </declare-styleable>
+    
+    <declare-styleable name="TvHorizontalGridView">
+        <attr name="cursorRes"/>
+        <attr name="cursorRes_1280"/>
+    	<attr name="cursorRes_1920"/>
+    	<attr name="cursorRes_2560"/>
+   	    <attr name="cursorRes_3840"/>
+   	    <attr name="cursorRes_4096"/>
+        <attr name="scalable"/>
+        <attr name="scale"/>
+        <attr name="animationType"/>
+        <attr name="durationLarge"/>
+        <attr name="durationSmall"/>
+        <attr name="durationTranslate"/>
+        <attr name="delay" />
+        <attr name="scrollDelay"/>
+    	<attr name="scrollDuration"/>
+        <attr name="boarder"/>
+        <attr name="boarderTop"/>
+        <attr name="boarderLeft"/>
+        <attr name="boarderBottom"/>
+        <attr name="boarderRight"/>
+        <attr name="boarderInt"/>
+        <attr name="boarderTopInt"/>
+        <attr name="boarderLeftInt"/>
+        <attr name="boarderBottomInt"/>
+        <attr name="boarderRightInt"/>
+        <attr name="rows"/>
+        <attr name="spaceHori"/>
+        <attr name="spaceVert"/>
+        <attr name="itemWidth"/>
+        <attr name="itemHeight"/>
+        <attr name="paddingLeft"/>
+        <attr name="paddingTop"/>
+        <attr name="initFocus"/>
+        <attr name="scrollMode"/>
+    </declare-styleable>
+    
+    <declare-styleable name="TvGallery">
+        <attr name="cursorRes"/>
+        <attr name="cursorRes_1280"/>
+    	<attr name="cursorRes_1920"/>
+    	<attr name="cursorRes_2560"/>
+   	    <attr name="cursorRes_3840"/>
+   	    <attr name="cursorRes_4096"/>
+        <attr name="scalable"/>
+        <attr name="scale"/>
+        <attr name="animationType"/>
+        <attr name="durationLarge"/>
+        <attr name="durationSmall"/>
+        <attr name="durationTranslate"/>
+        <attr name="delay" />
+        <attr name="scrollDelay"/>
+    	<attr name="scrollDuration"/>
+        <attr name="boarder"/>
+        <attr name="boarderTop"/>
+        <attr name="boarderLeft"/>
+        <attr name="boarderBottom"/>
+        <attr name="boarderRight"/>
+        <attr name="boarderInt"/>
+        <attr name="boarderTopInt"/>
+        <attr name="boarderLeftInt"/>
+        <attr name="boarderBottomInt"/>
+        <attr name="boarderRightInt"/>
+        <attr name="spaceHori"/>
+        <attr name="itemWidth"/>
+        <attr name="itemHeight"/>
+        <attr name="paddingLeft"/>
+        <attr name="paddingTop"/>
+        <attr name="initFocus"/>
+        <attr name="scrollMode"/>
+    </declare-styleable>
+    
+    
+    <declare-styleable name="TvRelativeLayout">
+        <attr name="cursorRes"/>
+        <attr name="scalable"/>
+        <attr name="scale"/>
+        <attr name="animationType"/>
+        <attr name="durationLarge"/>
+        <attr name="durationSmall"/>
+        <attr name="delay" />
+        <attr name="boarder"/>
+        <attr name="boarderTop"/>
+        <attr name="boarderLeft"/>
+        <attr name="boarderBottom"/>
+        <attr name="boarderRight"/>
+        <attr name="boarderInt"/>
+        <attr name="boarderTopInt"/>
+        <attr name="boarderLeftInt"/>
+        <attr name="boarderBottomInt"/>
+        <attr name="boarderRightInt"/>
+    </declare-styleable>
+    <declare-styleable name="TvButton">
+        <attr name="cursorRes"/>
+        <attr name="cursorRes_1280"/>
+    	<attr name="cursorRes_1920"/>
+    	<attr name="cursorRes_2560"/>
+   	    <attr name="cursorRes_3840"/>
+   	    <attr name="cursorRes_4096"/>
+        <attr name="scalable"/>
+        <attr name="scale"/>
+        <attr name="durationLarge"/>
+        <attr name="durationSmall"/>
+        <attr name="delay" />
+        <attr name="boarder"/>
+        <attr name="boarderTop"/>
+        <attr name="boarderLeft"/>
+        <attr name="boarderBottom"/>
+        <attr name="boarderRight"/>
+        <attr name="boarderInt"/>
+        <attr name="boarderTopInt"/>
+        <attr name="boarderLeftInt"/>
+        <attr name="boarderBottomInt"/>
+        <attr name="boarderRightInt"/>
+    </declare-styleable>
+    <declare-styleable name="TvSubButton">
+        <attr name="cursorRes"/>
+        <attr name="cursorRes_1280"/>
+    	<attr name="cursorRes_1920"/>
+    	<attr name="cursorRes_2560"/>
+   	    <attr name="cursorRes_3840"/>
+   	    <attr name="cursorRes_4096"/>
+        <attr name="scalable"/>
+        <attr name="scale"/>
+        <attr name="animationType"/>
+        <attr name="durationLarge"/>
+        <attr name="durationSmall"/>
+        <attr name="delay" />
+        <attr name="boarder"/>
+        <attr name="boarderTop"/>
+        <attr name="boarderLeft"/>
+        <attr name="boarderBottom"/>
+        <attr name="boarderRight"/>
+        <attr name="boarderInt"/>
+        <attr name="boarderTopInt"/>
+        <attr name="boarderLeftInt"/>
+        <attr name="boarderBottomInt"/>
+        <attr name="boarderRightInt"/>
+    </declare-styleable>
+    <declare-styleable name="TvProgressBar">
+        <attr name="backgroundColor" />
+        <attr name="progressStartColor" />
+        <attr name="progressEndColor" />
+        <attr name="roundWidth"/>
+        <attr name="rectRadius"/>
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="max"/>
+        <attr name="textDisplayable"/>
+        <attr name="style"/>
+    </declare-styleable>
+    <declare-styleable name="TvMarqueeText">
+        <attr name="text" />
+        <attr name="period" />
+        <attr name="vague" />
+        <attr name="textStyle"/>
+    </declare-styleable>
+    <declare-styleable name="TvLoadingBar">
+        <attr name="imageRes" />
+        <attr name="period" />
+        <attr name="delay" />
+        <attr name="clockwise" />
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="textDisplayable"/>
+    </declare-styleable>
+
+</resources>

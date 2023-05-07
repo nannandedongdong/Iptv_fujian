@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:MyRadioButton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电视回看"
+        android:textColor="@color/text_color_blue"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_channel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/epg_bg"
+            android:divider="@null"
+            android:listSelector="@drawable/selector_news_main"
+            android:padding="5dp">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#60000000"
+                android:orientation="horizontal">
+
+                <com.ccdt.ottclient.ui.view.VideoPlayerAndroidVideoView
+                    android:id="@+id/video_view"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="20dp">
+
+                    <TextView
+                        android:id="@+id/tv_channel_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/tv_nextitem_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/tv_back_weekdays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:nextFocusUp="@id/tv_back_weekdays"
+                android:orientation="horizontal"
+                android:weightSum="7">
+
+                <com.ccdt.ottclient.ui.view.MyRadioButton
+                    android:id="@+id/tv_back_week_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="2dp"
+                    MyRadioButton:weekText = "星期日"
+                    android:background="@drawable/tv_vod_week_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="\n00/00/00"
+                    android:textSize="16sp"/>
+
+                <com.ccdt.ottclient.ui.view.MyRadioButton
+                    android:id="@+id/tv_back_week_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:paddingBottom="2dp"
+                    MyRadioButton:weekText = "星期一"
+                    android:background="@drawable/tv_vod_week_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="\n00/00/00"
+                    android:textSize="16sp" />
+
+                <com.ccdt.ottclient.ui.view.MyRadioButton
+                    android:id="@+id/tv_back_week_2"
+                    android:layout_width="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    MyRadioButton:weekText = "星期二"
+                    android:background="@drawable/tv_vod_week_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="\n00/00/00"
+                    android:textSize="16sp" />
+
+                <com.ccdt.ottclient.ui.view.MyRadioButton
+                    android:id="@+id/tv_back_week_3"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="2dp"
+                    MyRadioButton:weekText = "星期三"
+                    android:background="@drawable/tv_vod_week_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="\n00/00/00"
+                    android:textSize="16sp" />
+
+                <com.ccdt.ottclient.ui.view.MyRadioButton
+                    android:id="@+id/tv_back_week_4"
+                    android:paddingBottom="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    MyRadioButton:weekText = "星期四"
+                    android:background="@drawable/tv_vod_week_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="\n00/00/00"
+                    android:textSize="16sp" />
+
+                <com.ccdt.ottclient.ui.view.MyRadioButton
+                    android:id="@+id/tv_back_week_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    MyRadioButton:weekText = "星期五"
+                    android:background="@drawable/tv_vod_week_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="\n00/00/00"
+                    android:textSize="16sp" />
+
+                <com.ccdt.ottclient.ui.view.MyRadioButton
+                    android:id="@+id/tv_back_week_6"
+                    android:paddingBottom="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    MyRadioButton:weekText = "星期六"
+                    android:background="@drawable/tv_vod_week_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="\n00/00/00"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <ListView
+                android:id="@+id/lv_programme"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#60000000"
+                android:divider="@null"
+                android:listSelector="@drawable/selector_news_main" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

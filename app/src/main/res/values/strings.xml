@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">视界</string>
+    <string name="title_activity_interface_test">InterfaceTestActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_purchase_history">PurchaseHistoryActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="player_error_play_complete">播放完成</string>
+
+    <string name="have_not_install_app_shop">当前系统没有安装应用商店</string>
+
+    <string name="play_url_error">播放地址有误，请检查网络配置</string>
+    <string name="video_loading">视频加载中...</string>
+    <string name="network_disconnected">网络中断，请检查网络</string>
+    <string name="play_complete_goto_next">播放完成，准备播放下一集</string>
+    <string name="press_more_time_to_exit">再按一次退出</string>
+    <string name="what_series">&#160;第%1$d集</string>
+    <string name="all_series">%1$d集全</string>
+    <string name="update_series">更新至%1$d集</string>
+    <string name="unknow_rate">未知码率</string>
+    <string name="sure">确定</string>
+
+    <string name="play_history">播放记录</string>
+    <string name="altogether_media">共%1$d部</string>
+    <string name="altogether_news">共%1$d条</string>
+
+    <string name="movie_is_not_free">影片收费，请先购买!</string>
+    <string name="vod_auth_error">影片鉴权失败！</string>
+    <string name="buy_product_error">购买产品失败！</string>
+    <string name="at_least_select_one_product">请选择所购买的产品！</string>
+
+    <string name="upgrade_tips">升级提示</string>
+    <string name="confirm">确&#160;&#160;定</string>
+    <string name="cancel">取&#160;&#160;消</string>
+    <string name="pause">暂&#160;&#160;停</string>
+    <string name="restart">继&#160;&#160;续</string>
+    <string name="stop">终&#160;&#160;止</string>
+    <string name="install">安&#160;&#160;装</string>
+    <string name="location">哈尔滨</string>
+
+</resources>

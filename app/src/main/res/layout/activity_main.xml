@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    >
+
+    <com.ccdt.ottclient.ui.widget.GlobalStatusBar
+        android:id="@+id/global_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px87"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/global_status_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="2dp"
+        android:background="#33ffffff"
+        />
+
+    <viewpagerindicator.TabPageIndicator
+        android:id="@+id/main_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px120"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginRight="180dp"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="7dp"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px90"
+        >
+
+        <ImageView
+            android:id="@+id/activity_main_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="38dp"
+            android:background="@drawable/selector_common"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_search"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

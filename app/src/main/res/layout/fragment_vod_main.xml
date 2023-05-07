@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.slf.frame.tv.widget.TvRelativeLayoutAsGroup
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center"
+    app:animationType="DEFAULT"
+    app:boarder="@dimen/px33"
+    app:cursorRes="@drawable/shadow2"
+    app:delay="0"
+    app:durationLarge="50"
+    app:durationSmall="50"
+    app:scale="1.04"
+    >
+
+    <!--
+         boarder-:光标偏移参数组
+         paddingLeft:左内边距  * 右外边距据此自动计算
+         paddingTop:左上边距
+         initFocus:初始获得焦点
+         scalable:子项是否放大
+         scale:放大比率
+         animationType:选中框位移动画
+         durationLarge:放大用时
+         durationSmall:缩小用时
+         delay:放大动画启动延时
+    -->
+
+    <FrameLayout
+        android:id="@+id/layout_1"
+        android:layout_width="@dimen/px528"
+        android:layout_height="@dimen/px360"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:tag="tag_img"
+            />
+
+        <View
+            android:id="@+id/bg_green"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_vod_page_green"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="tag_focus"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:tag="tag_txt"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_4"
+        android:layout_width="@dimen/px262"
+        android:layout_height="@dimen/px360"
+        android:layout_marginLeft="@dimen/px6"
+        android:layout_toRightOf="@id/layout_1"
+        android:background="@drawable/bg_blue"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/px180"
+            android:layout_height="@dimen/px180"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:tag="tag_img"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="tag_focus"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:tag="tag_txt"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/layout_5"
+        android:layout_width="@dimen/px528"
+        android:layout_height="@dimen/px360"
+        android:layout_marginLeft="@dimen/px6"
+        android:layout_toRightOf="@id/layout_4"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:tag="tag_img"
+            />
+
+        <View
+            android:id="@+id/bg_red"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_vod_page_red"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="tag_focus"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:tag="tag_txt"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_8"
+        android:layout_width="@dimen/px262"
+        android:layout_height="@dimen/px360"
+        android:layout_marginLeft="@dimen/px6"
+        android:layout_toRightOf="@id/layout_5"
+        android:background="@drawable/bg_green"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+
+        <ImageView
+            android:layout_width="@dimen/px180"
+            android:layout_height="@dimen/px180"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:tag="tag_img"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="tag_focus"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:tag="tag_txt"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/layout_2"
+        android:layout_width="@dimen/px262"
+        android:layout_height="@dimen/px360"
+        android:layout_below="@id/layout_1"
+        android:layout_marginTop="@dimen/px6"
+        android:background="@drawable/bg_red"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+
+        <ImageView
+            android:layout_width="@dimen/px180"
+            android:layout_height="@dimen/px180"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:tag="tag_img"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="tag_focus"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:tag="tag_txt"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/layout_3"
+        android:layout_width="@dimen/px528"
+        android:layout_height="@dimen/px360"
+        android:layout_alignTop="@id/layout_2"
+        android:layout_marginLeft="@dimen/px6"
+        android:layout_toRightOf="@id/layout_2"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:tag="tag_img"
+            />
+
+        <View
+            android:id="@+id/bg_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_vod_page_yellow"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="tag_focus"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:tag="tag_txt"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_6"
+        android:layout_width="@dimen/px262"
+        android:layout_height="@dimen/px360"
+        android:layout_alignTop="@id/layout_2"
+        android:layout_marginLeft="@dimen/px6"
+        android:layout_toRightOf="@id/layout_3"
+        android:background="@drawable/bg_orange"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+
+        <ImageView
+            android:layout_width="@dimen/px180"
+            android:layout_height="@dimen/px180"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:tag="tag_img"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="tag_focus"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:tag="tag_txt"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/layout_7"
+        android:layout_width="@dimen/px528"
+        android:layout_height="@dimen/px360"
+        android:layout_alignTop="@id/layout_2"
+        android:layout_marginLeft="@dimen/px6"
+        android:layout_toRightOf="@id/layout_6"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:tag="tag_img"
+            />
+
+        <View
+            android:id="@+id/bg_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_vod_page_blue"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="tag_focus"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:tag="tag_txt"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            />
+    </FrameLayout>
+
+</com.slf.frame.tv.widget.TvRelativeLayoutAsGroup>

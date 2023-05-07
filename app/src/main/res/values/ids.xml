@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="main_tab_0" type="id"/>
+    <item name="main_tab_1" type="id"/>
+    <item name="main_tab_2" type="id"/>
+    <item name="main_tab_3" type="id"/>
+    <item name="main_tab_4" type="id"/>
+    <item name="main_tab_5" type="id"/>
+
+    <item name="news_menu_0" type="id"/>
+    <item name="news_menu_1" type="id"/>
+    <item name="news_menu_2" type="id"/>
+    <item name="news_menu_3" type="id"/>
+    <item name="news_menu_4" type="id"/>
+
+
+    <item name="recycler_index_0" type="id"/>
+    <item name="recycler_layout_index_0" type="id"/>
+
+    <item name="news_list_index_0" type="id"/>
+
+    <item name="paike_page_item_choose" type="id"/>
+    <item name="paike_page_item_task" type="id"/>
+
+
+    <item name="search_keyboard_key_A" type="id"/>
+    <item name="search_keyboard_key_B" type="id"/>
+    <item name="search_keyboard_key_C" type="id"/>
+    <item name="search_keyboard_key_D" type="id"/>
+    <item name="search_keyboard_key_E" type="id"/>
+    <item name="search_keyboard_key_F" type="id"/>
+    <item name="search_keyboard_key_G" type="id"/>
+    <item name="search_keyboard_key_H" type="id"/>
+    <item name="search_keyboard_key_I" type="id"/>
+    <item name="search_keyboard_key_J" type="id"/>
+    <item name="search_keyboard_key_K" type="id"/>
+    <item name="search_keyboard_key_L" type="id"/>
+    <item name="search_keyboard_key_M" type="id"/>
+    <item name="search_keyboard_key_N" type="id"/>
+    <item name="search_keyboard_key_O" type="id"/>
+    <item name="search_keyboard_key_P" type="id"/>
+    <item name="search_keyboard_key_Q" type="id"/>
+    <item name="search_keyboard_key_R" type="id"/>
+    <item name="search_keyboard_key_S" type="id"/>
+    <item name="search_keyboard_key_T" type="id"/>
+    <item name="search_keyboard_key_U" type="id"/>
+    <item name="search_keyboard_key_V" type="id"/>
+    <item name="search_keyboard_key_W" type="id"/>
+    <item name="search_keyboard_key_X" type="id"/>
+    <item name="search_keyboard_key_Y" type="id"/>
+    <item name="search_keyboard_key_Z" type="id"/>
+    <item name="search_keyboard_key_0" type="id"/>
+    <item name="search_keyboard_key_1" type="id"/>
+    <item name="search_keyboard_key_2" type="id"/>
+    <item name="search_keyboard_key_3" type="id"/>
+    <item name="search_keyboard_key_4" type="id"/>
+    <item name="search_keyboard_key_5" type="id"/>
+    <item name="search_keyboard_key_6" type="id"/>
+    <item name="search_keyboard_key_7" type="id"/>
+    <item name="search_keyboard_key_8" type="id"/>
+    <item name="search_keyboard_key_9" type="id"/>
+
+
+
+
+</resources>

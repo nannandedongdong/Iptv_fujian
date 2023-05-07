@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    >
+
+    <LinearLayout
+        android:id="@+id/layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:text="我的收藏"
+            android:textColor="@color/base_title_unselected"
+            android:textSize="28sp"
+            />
+
+        <TextView
+            android:id="@+id/txtNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:textColor="@color/base_title_unselected"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+
+    <io.viva.tv.app.widget.FocusedGridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_head"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:columnWidth="@dimen/px284"
+        android:horizontalSpacing="@dimen/px11"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="6"
+        android:paddingBottom="10dip"
+        android:paddingLeft="@dimen/px83"
+        android:paddingRight="@dimen/px83"
+        android:paddingTop="20dip"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/px37"
+        />
+
+</RelativeLayout>

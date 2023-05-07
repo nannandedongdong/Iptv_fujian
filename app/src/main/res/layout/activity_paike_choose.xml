@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingTop="40dp"
+        >
+
+        <TextView
+
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            />
+
+        <!--<TextView-->
+            <!--android:id="@+id/activity_paike_choose_bar_label"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@id/txt_title"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toRightOf="@id/txt_title"-->
+            <!--android:text="最新"-->
+            <!--/>-->
+
+        <TextView
+            android:id="@+id/txtPaikeNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txt_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/txt_title"
+            />
+    </RelativeLayout>
+
+    <io.viva.tv.app.widget.FocusedGridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:columnWidth="@dimen/px438"
+        android:horizontalSpacing="@dimen/px14"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:paddingBottom="10dip"
+        android:paddingLeft="@dimen/px65"
+        android:paddingRight="@dimen/px65"
+        android:paddingTop="20dip"
+        android:scrollbars="none"
+        android:stretchMode="spacingWidth"
+        android:verticalSpacing="@dimen/px14"
+        />
+</LinearLayout>

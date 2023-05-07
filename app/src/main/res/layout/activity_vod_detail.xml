@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ccdt.ottclient.ui.widget.MovieDetailLinearLayout
+    android:id="@+id/rootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="2290dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <!-- 左 -->
+        <LinearLayout
+
+            android:id="@+id/layoutPoster"
+            android:layout_width="282dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="66dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="电影"
+                android:textColor="@color/base_title_unselected"
+                android:textSize="26sp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_show"
+                android:layout_width="282dp"
+                android:layout_height="392dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_default"
+                />
+
+
+            <TextView
+                android:id="@+id/txtCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                />
+
+
+            <TextView
+                android:id="@+id/txt_origin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txt_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txt_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txtRunTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <!-- 中 -->
+        <LinearLayout
+            android:id="@+id/layoutDescription"
+            android:layout_width="650dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/txtMzName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:textColor="#fe9900"
+                android:textSize="32sp"
+                />
+
+            <RatingBar
+                android:id="@+id/rtbStar"
+                style="@style/roomRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:numStars="5"
+                />
+
+            <TextView
+                android:id="@+id/txtDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="编剧：乔斯.韦登/斯坦.李/杰克.科比"-->
+            <!--android:textSize="18sp"-->
+            <!--/>-->
+
+            <TextView
+                android:id="@+id/txtActors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+            <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@drawable/selector_bg_border_blue"-->
+            <!--android:focusable="true"-->
+            <!--android:focusableInTouchMode="true"-->
+            <!--&gt;-->
+
+            <TextView
+                android:id="@+id/txtMzDesc"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+            <!--</ScrollView>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="112dp"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnBuyOrPlay"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/selector_bg_button_base"
+                    android:drawableLeft="@drawable/selector_movie_detail_buy"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:nextFocusUp="@id/btnBuyOrPlay"
+                    android:paddingLeft="30dp"
+                    android:text="购买"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    />
+
+                <Button
+                    android:id="@+id/btnSeries"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="38dp"
+                    android:background="@drawable/selector_bg_button_base"
+                    android:drawableLeft="@drawable/selector_movie_detail_series"
+                    android:gravity="center"
+                    android:nextFocusUp="@id/btnBuyOrPlay"
+                    android:paddingLeft="30dp"
+                    android:text="选集"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:visibility="gone"
+                    />
+
+                <Button
+                    android:id="@+id/btnCollect"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="38dp"
+                    android:background="@drawable/selector_bg_button_base"
+                    android:drawableLeft="@drawable/ic_movie_detail_collect"
+                    android:gravity="center"
+                    android:nextFocusUp="@id/btnCollect"
+                    android:paddingLeft="30dp"
+                    android:text="收藏"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutMoreLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:text="影片"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:text="详情"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/viewVerticalBar"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="125dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="115dp"
+            >
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="#66ffffff"
+                />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#88000000"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layoutMoreRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:text="相关"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/arrow_right"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="1"
+                android:text="影片"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <!-- 右 -->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/grid"
+            android:layout_width="1100dp"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="114dp"
+            />
+
+
+    </LinearLayout>
+</com.ccdt.ottclient.ui.widget.MovieDetailLinearLayout>

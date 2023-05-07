@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <com.ccdt.ottclient.ui.view.VideoPlayerAndroidVideoView
+        android:id="@+id/android_videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <!-- 频道列表 -->
+        <LinearLayout
+            android:id="@+id/live_player_stb_channels_list_rl"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#90000000"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:id="@+id/layout_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/arrow_left"
+                    />
+
+                <TextView
+                    android:id="@+id/live_player_stb_channles_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="全部频道"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/arrow_right"
+                    />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/live_player_stb_channels_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layout_head"
+                android:layout_marginBottom="50dp"
+                android:layout_marginRight="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="@drawable/selector_live_player_menu"
+
+                android:scrollbars="none"
+                />
+        </LinearLayout>
+
+        <!-- 底部 -->
+        <RelativeLayout
+            android:id="@+id/video_controller_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:id="@+id/video_bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#88000000"
+                android:padding="10dp"
+                android:visibility="visible"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/video_bottom_controller_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_now_channel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="5dp"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_now_progrem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="300dp"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/video_current_time"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#ffffffff"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/video_total_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:textColor="#ffffffff"
+                        android:textSize="25sp"
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        />
+
+                    <com.ccdt.ottclient.ui.widget.DigitalClockView
+                        android:id="@+id/current_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="30dp"
+                        android:drawableLeft="@drawable/live_present_time"
+                        android:textSize="24sp"
+                        />
+
+                    <SeekBar
+                        android:id="@+id/video_seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_now_channel"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="3dp"
+                        android:layout_toLeftOf="@id/video_total_time"
+                        android:layout_toRightOf="@id/video_current_time"
+                        android:focusable="false"
+                        android:max="1000"
+                        android:maxHeight="8dp"
+                        android:minHeight="8dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:progressDrawable="@drawable/seekbar_style"
+                        android:thumb="@null"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_next_progrem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/video_seekbar"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="20sp"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <include layout="@layout/video_loading"/>
+
+    <ViewStub
+        android:id="@+id/view_stub"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:inflatedId="@+id/dialog_layout"
+        android:layout="@layout/dialog_live"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

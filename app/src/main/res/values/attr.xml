@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AppPageItemLayout">
+        <attr name="app_name" format="reference|string" />
+        <attr name="app_icon" format="reference" />
+        <attr name="app_name_visibility" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="NewsPageItemLayout">
+        <attr name="news_title" format="reference|string" />
+        <attr name="news_from" format="reference|string" />
+        <attr name="news_time" format="reference|string" />
+        <attr name="news_img" format="reference" />
+    </declare-styleable>
+
+
+    <!-- TextView描边 -->
+    <declare-styleable name="StrokeTextView">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="outerColor" format="color|reference" />
+        <attr name="innnerColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MyRadioButton">
+        <attr name="weekText" format="string" />
+    </declare-styleable>
+
+
+</resources>

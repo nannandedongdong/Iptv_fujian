@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="500dp"
+    android:layout_height="400dp"
+    android:background="@drawable/dialog"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/upgrade_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/upgrade_tips"
+        android:textColor="@color/white"
+        android:textSize="28sp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/upgrade_title"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_00cccc" />
+
+    <TextView
+        android:id="@+id/upgrade_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/upgrade_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/video_detail_button_background"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/upgrade_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/upgrade_confirm"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/video_detail_button_background"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="26sp" />
+
+    <RelativeLayout
+        android:id="@+id/upgrade_download_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_above="@id/upgrade_confirm"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/upgrade_download_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/color_cccccc"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/upgrade_download_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/color_cccccc"
+            android:textSize="24sp" />
+
+        <ProgressBar
+            android:id="@+id/upgrade_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/upgrade_download_info"
+            android:max="100"
+            android:maxHeight="10dp"
+            android:minHeight="5dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/upgrade_app_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/upgrade_download_layout"
+        android:layout_below="@id/upgrade_app_name"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+</RelativeLayout>

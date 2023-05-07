@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px252"
+    android:layout_height="@dimen/px372"
+    android:focusable="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <FrameLayout
+        android:layout_width="@dimen/px252"
+        android:layout_height="@dimen/px372"
+        >
+
+        <ImageView
+            android:id="@+id/imgHaibao"
+            android:layout_width="@dimen/px252"
+            android:layout_height="@dimen/px372"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default"
+            />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_focus"
+        android:layout_width="@dimen/px252"
+        android:layout_height="@dimen/px372"
+        android:background="@drawable/bg_vod_black"
+        >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textColor="@color/text_unselected_vod"
+            android:singleLine="true"
+            android:textSize="24sp"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ccdt.ottclient.ui.view.FloatingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <GridLayout
+        android:id="@+id/homepage_gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageView
+        android:id="@+id/focus_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow2"
+        android:padding="@dimen/px33"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+</com.ccdt.ottclient.ui.view.FloatingLayout>

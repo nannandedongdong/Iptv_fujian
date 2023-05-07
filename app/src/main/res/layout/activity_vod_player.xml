@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/vod_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/layout_video"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--&gt;-->
+
+        <com.ccdt.ottclient.ui.view.VideoPlayerAndroidVideoView
+            android:id="@+id/android_videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            />
+    <!--</FrameLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/video_controller_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- 顶部Layout -->
+
+        <RelativeLayout
+            android:id="@+id/video_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#88000000"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                />
+
+            <com.ccdt.ottclient.ui.widget.DigitalClockView
+                android:id="@+id/current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:drawableLeft="@drawable/live_present_time"
+                android:textSize="24sp"
+                />
+
+        </RelativeLayout>
+        <!-- 底部Layout -->
+
+        <RelativeLayout
+            android:id="@+id/video_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#88000000"
+            android:padding="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/video_bottom_controller_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/video_current_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="110dp"
+                    android:textColor="#07a3b4"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/video_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="100dp"
+                    android:textColor="#18b77a"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <SeekBar
+                    android:id="@+id/video_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@id/video_total_time"
+                    android:layout_toRightOf="@id/video_current_time"
+                    android:focusable="true"
+                    android:max="1000"
+                    android:maxHeight="8dp"
+                    android:minHeight="8dp"
+                    android:progressDrawable="@drawable/seekbar_style"
+                    android:thumb="@null"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/video_center_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/video_pause_stb"
+        android:visibility="gone"
+        />
+
+    <include layout="@layout/video_loading"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/menu_bg"
+        android:visibility="gone"
+        >
+
+        <ListView
+            android:id="@+id/lv_menu"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:dividerHeight="0.5px"
+            android:listSelector="@drawable/selector_news_main"
+            >
+
+        </ListView>
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/bar_volume"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:focusable="false"
+        android:progressDrawable="@drawable/progress_bg"
+        android:thumb="@null"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
